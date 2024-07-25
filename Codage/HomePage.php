@@ -192,40 +192,7 @@ $topDestinations = fetchTopDestinations($conn);
         </div>
         <div class="imagepattern"></div>
     </section>
-
-   <!-- Comments Section -->
-<!-- <section class="comments-section py-5">
-    <div class="container">
-        <div class="comment-boxs">
-            <div class="col-md-6">
-                <div class="comment-box p-4">
-                    <h3 class="Best_comments">Best Comments</h3>
-                    <blockquote class="blockquote">
-                        <p>“I found a reason to live”</p>
-                        <footer class="blockquote-footer">I few months back, I was considering suicide. Life felt unbearable and lonely. I was opportuned to come across a group trip to Old Medina, I made new friends and found a community of people. Now we are planning a new group trip soon.</footer>
-                    </blockquote>
-                    <div class="navigation-arrows">
-                        <div>
-                            <span class="arrow left-arrow" onclick="showPreviousComment()">&larr;</span>
-                            <span class="arrow right-arrow" onclick="showNextComment()">&rarr;</span>
-                        </div>
-                        <div class="pagination-dots mt-2">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot" style="background-color: aqua;"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="comment-image">
-                    <div class="comment-image-img"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
+    
 <!-- Comments Section -->
     <section class="comments-section py-5">
         <div class="container">

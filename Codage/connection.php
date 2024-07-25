@@ -34,6 +34,19 @@ function fetchTopRestaurants($pdo) {
 
     return $statement->fetchAll(PDO::FETCH_ASSOC);
 }
+// function for fetch reviews in publication 
+function fetchReviews($conn, $publicationid) {
+    $QueryFetchReviews = "SELECT r.comment, r.rating, u.username, u.coverimage, r.userid 
+              FROM review r
+              JOIN user u ON r.userid = u.userid
+              WHERE r.publicationid = :publicationid";
+    
+    $stmt = $conn->prepare($QueryFetchReviews);
+    $stmt->bindParam(':publicationid', $publicationid, PDO::PARAM_INT);
+    $stmt->execute();
+    
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 
 function fetchAllDestinationsV2($DB) {
     $query = "
@@ -112,6 +125,5 @@ LIMIT 3;
     return $statement->fetchAll(PDO::FETCH_ASSOC);
 }
 
-//fetch reviews 
 
 ?>
